@@ -21,8 +21,23 @@ def Numeros():
     pausa=input("Presione una tecla para continuar")
 def Datos():
     print("****** Opcion de datos de personas**")
-    pausa=input("Presione una tecla para continuar")
+    #ingresar para n personas donde n es un número ingresado por teclado: nombre y edad. 
+    #calcular y mostrar: cantidad de personas mayores de edad y cantidad de menores de edad. 
+    #subir la modificación a github con el siguiente mensaje: "se programo la opción 2 del menú"
+    veces= int(input("Cuantos Personas desea ingresar?: "))
+    menor=0
+    mayor=0
+    for i in range(veces):
+        nume=int(input("Ingrese un edad "))
+        if(nume<18):
+            menor=menor+1
+        else:
+            mayor=mayor+1
+    print("Cantidad de personas Menores de edad es de: "+str(menor)+
+    "\n Cantidad de Personas Mayores de edad es de: "+str(mayor))
 
+
+    pausa=input("Presione una tecla para continuar")
 seguir=True
 while(seguir):
     os.system('cls')
